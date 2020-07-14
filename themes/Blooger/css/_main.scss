@@ -1,0 +1,235 @@
+main {
+  .site-title {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    .site-background {
+      padding-top: 10rem;
+      text-align: center;
+      color: $white;
+    }
+    h1, h3{
+      margin: .3rem;
+    }
+    .btn {
+      margin: 1.8rem;
+      background: $sky;
+      &:hover {
+        border: 1px solid $white;
+        background: transparent;
+        color: $white;
+      }
+    }
+  }
+
+  .blog {
+    height: 100vh;
+    width: 100%;
+
+    @media only screen and (max-width: 520px) {
+      height: 125vh;
+    }
+
+    .blog-post {
+      padding-top: 6rem;
+      .blog-content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        margin: 3rem 2rem;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        .blog-title {
+          padding: 2rem 0;
+        }
+        .btn-blog{
+          padding: .7rem 2rem;
+          background: $sky;
+          margin: 0.5rem;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+    .owl-theme {
+      .owl-nav {
+        position: absolute;
+        top: 0%;
+        margin: 0 auto;
+        width: 100%;
+        .owl-prev .owl-nav-prev {
+          color: $text-gray;
+          background: transparent;
+          font-size: 2rem;
+        }
+        .owl-next .owl-nav-next {
+          color: $text-gray;
+          background: transparent;
+          font-size: 2rem;
+        }
+        & [class*='owl-'] {
+          outline: none;
+          &:hover {
+            background: transparent;
+            color: $text-gray;
+          }
+        }
+      }
+    }
+
+  }
+
+  .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    @media only screen and (max-width: 750px) {
+      grid-template-columns: 100%;
+    }
+
+    .post-content {
+      margin-bottom: 5rem;
+      width: 100%;
+      &> .post-image, .post-title {
+        padding: 1rem 2rem;
+        position: relative;
+      }
+      &> .post-image .post-info {
+        background: $sky;
+        padding: 1rem 1rem;
+        position: absolute;
+        bottom: 0%;
+        left: 20vw;
+        border-radius: 3rem;
+
+        @media only screen and (max-width: 520px) {
+          display: none;
+        }
+
+        & span {
+          margin: 0 .5rem;
+        }
+
+        @media only screen and (max-width: 1130px) {
+          left: 2rem;
+          bottom: 1.2rem;
+          border-radius: 0%;
+        }
+      }
+      &> .post-image > div {
+        overflow: hidden;
+      }
+      &> .post-image .img {
+        width: 100%;
+        transition: all 1s ease;
+      }
+      &> .post-image .img:hover {
+        transform: scale(1.3);
+      }
+      .post-title {
+        a {
+          font-family: $anton;
+          font-size: 1.5rem;
+        }
+        .post-btn {
+          border-radius: 0;
+          padding: .7rem 1.5rem;
+          background: $sky;
+        }
+      }
+    }
+    .posts .pagination {
+      justify-content: center;
+      margin: 4rem 0;
+      color: red;
+      a {
+        padding: .6rem .9rem;
+        border-radius: 2rem;
+        margin: .3rem;
+        font-family: $lexend;
+      }
+      .pages {
+        background: $text-gray;
+        color: $white;
+      }
+    }
+
+    .sidebar {
+      .category {
+        .category-list {
+          font-family: $livvic;
+          .list-items {
+            background: $sky;
+            padding: .4rem 1rem;
+            margin: .8rem 0;
+            border-radius: 3rem;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            a {
+              color: black;
+            }
+          }
+        }
+      }
+
+      .popular-post {
+        h2 {
+          padding-top: 18rem;
+        }
+        .post-content {
+          padding: 1rem 0;
+          .post-image {
+            .post-info {
+              padding: .4rem .1rem;
+              bottom: 0rem;
+              left: 1.5rem;
+              border-radius: 0rem;
+              background: $white;
+
+              @media only screen and (max-width: 1130px) {
+                display: none;
+              }
+            }
+          }
+          .post-title a {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .news-letter {
+        padding-top: 10rem;
+        .form-element {
+          padding: .5rem 2rem;
+          .input-element {
+            width: 80%;
+            height: 1.9rem;
+            padding: .3rem .5rem;
+            font-family: $lexend;
+            font-size: 1rem;
+          }
+          .form-btn {
+            border-radius: 0;
+            padding: .8rem 35%;
+            margin: 1rem 0;
+            background: $sky;
+          }
+        }
+      }
+
+      .popular-tags {
+        padding: 5rem 0;
+        .tags {
+          .tag {
+            background: $sky;
+            padding: .4rem 1rem;
+            border-radius: 3rem;
+            margin: .4rem .6rem;
+          }
+        }
+      }
+    }
+  }
+}

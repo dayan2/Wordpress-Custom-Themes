@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@600&display=swap');
+@import '_aboutus.scss';
+@import '_ourservices.scss';
+@import '_contactus.scss';
+@import '_ourteam.scss';
+@import '_footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1.title {
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: 'Allura', cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a9a9a9;
+}
+
+.btn a {
+  display: block;
+  width: 180px;
+  height: 35px;
+  border: 2px solid #fb2274;
+  line-height: 35px;
+  margin: 25px auto 0;
+  color: #fb2274;
+  text-align: center;
+}
+
+.main_container {
+  position: relative;
+}
+
+//Navbar
+.navbar {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+.logo a {
+  font-size: 32px;
+  font-family: 'Allura', cursive;
+  color: #fb2274;
+}
+
+.navbar .navbar_items ul {
+  display: flex;
+}
+
+.navbar .navbar_items ul li {
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navbar .navbar_items ul li a {
+  color: #fff;
+}
+
+//baner image
+.banner_image {
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_content {
+  color: #fff;
+  text-align: center;
+}
+
+.banner_content h1 {
+  margin-bottom: 15px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.banner_content span {
+  color: #fb2274;
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .navbar ul li {
+    margin-bottom: 5px;
+  }
+
+  .banner_content {
+    margin-top: 35px;
+  }
+}

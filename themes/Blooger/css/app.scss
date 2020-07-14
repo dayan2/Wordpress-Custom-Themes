@@ -1,0 +1,70 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:wght@200&family=Lexend+Deca&family=Livvic:wght@100&display=swap');
+
+html, body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $text-gray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: $lexend;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: $lexend;
+}
+
+h3 {
+  font-family: $abel;
+  font-size: 1.3rem;
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: $livvic;
+  cursor: pointer;
+}
+
+span {
+  font-family: $abel;
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.text-gray {
+  color: $text-gray;
+}
+
+p {
+  font-family: $lexend;
+  color: $text-light;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@import "_navbar.scss";
+@import "_main.scss";
+@import "_footer.scss";

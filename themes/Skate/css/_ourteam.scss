@@ -1,0 +1,33 @@
+.ourteam {
+  padding: 5% 10%;
+  text-align: center;
+  background: #f5f5f5;
+
+  &_wrapper
+    .team {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .team-1.team {
+      margin-bottom: 25px;
+    }
+
+    .team_member {
+      width: 30%;
+      cursor: pointer;
+      height: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+        display: block;
+        height: auto;
+        transition: all 0.5s ease;
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+    }
+}
+
