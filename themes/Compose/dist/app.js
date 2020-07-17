@@ -107,12 +107,38 @@
 var signupBtn = document.getElementById('signUp');
 var signInBtn = document.getElementById('signIn');
 var container = document.getElementById('container');
-signupBtn.addEventListener('click', function () {
-  return container.classList.add('right-panel-active');
-});
-signInBtn.addEventListener('click', function () {
-  return container.classList.remove('right-panel-active');
-});
+
+if (signInBtn) {
+  signupBtn.addEventListener('click', function () {
+    return container.classList.add('right-panel-active');
+  });
+  signInBtn.addEventListener('click', function () {
+    return container.classList.remove('right-panel-active');
+  });
+} //Login form
+
+
+var inputs_login_form = document.querySelectorAll('.login-form-wrapper .input');
+
+if (inputs_login_form) {
+  var focusFunction = function focusFunction() {
+    var parent = this.parentNode.parentNode;
+    parent.classList.add('focus');
+  };
+
+  var blurFunction = function blurFunction() {
+    var parent = this.parentNode.parentNode;
+
+    if (this.value == "") {
+      parent.classList.remove('focus');
+    }
+  };
+
+  inputs_login_form.forEach(function (input) {
+    input.addEventListener('focus', focusFunction);
+    input.addEventListener('blur', blurFunction);
+  });
+}
 
 /***/ }),
 

@@ -13,7 +13,7 @@
                 <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
                 <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li>
             </ul>
-            <div class="social-media">
+            <div class="social-media">web
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>

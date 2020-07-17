@@ -15,7 +15,7 @@ mix.js('js/app.js', 'dist/').sass('css/app.scss', 'dist/');
 mix.disableNotifications();
 
 mix.browserSync({
-    proxy: 'wizard.local/compose/registration-form',
+    proxy: 'wizard.local/compose/login',
     files: [
       'dist/app.css',  // Generated .css file
       'dist/app.js',    // Generated .js file
